@@ -1,0 +1,52 @@
+
+//If21. Даны целочисленные координаты точки на плоскости.
+//Если точка совпадает с началом координат, то вывести 0.
+//Если точка не совпадает с началом координат, но лежит на оси OX или OY,
+//то вывести соответственно 1
+//или 2.Если точка не лежит на координатных осях, то вывести 3.
+
+
+Console.OutputEncoding = System.Text.Encoding.Default; //Ukraine lg
+
+Console.ForegroundColor = ConsoleColor.Green; // Дикоративні моменти..
+
+Console.WriteLine("Вкажіть значення Х");
+Console.ForegroundColor = ConsoleColor.Red;
+int x = Convert.ToInt16(Console.ReadLine());
+
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("Вкажіть значення Y");
+Console.ForegroundColor = ConsoleColor.Red;
+int y = Convert.ToInt16(Console.ReadLine());
+Console.ForegroundColor = ConsoleColor.Green;
+
+
+
+
+if (x == 0 & y == 0)
+{
+
+    Console.WriteLine("0 :дорівнює нулю  Х та У.");
+
+    
+}
+else
+{
+    if (x != 0 & y != 0)
+    {
+
+        Console.WriteLine("1 не дорівнює нулю.");
+
+    }
+    else
+    {
+        Console.WriteLine("3 точки не лежать на корденатах.");  
+
+        //Для відладки: щоб отримати цю помилку в любе із значень в ведіть "-0" наприклад.
+    }
+}
+
+
+
+Console.ReadLine();
+
